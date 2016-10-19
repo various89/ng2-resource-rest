@@ -1,7 +1,7 @@
 import { Http, Request } from '@angular/http';
 import { Injector } from '@angular/core';
 import { Type } from '@angular/core/src/type';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/observable';
 import { ResourceGlobalConfig } from './ResourceGlobalConfig';
 import { ResourceModel } from './ResourceModel';
 import { ResourceParamsBase } from './Interfaces';

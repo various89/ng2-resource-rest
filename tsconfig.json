@@ -9,8 +9,13 @@
     "inlineSources": true,
     "declaration": true,
     "moduleResolution": "node",
-    "types": ["node"],
-    "lib": ["es2015", "dom"]
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2015",
+      "dom"
+    ]
   },
   "files": [
     "ng2-resource-rest.ts",
@@ -22,7 +27,8 @@
     "./src/ResourceGlobalConfig",
     "./src/ResourceModel",
     "./src/ResourceParams",
-    "./src/ResourceProviders"
+    "./src/ResourceProviders",
+    "node_modules/typescript/lib/lib.es2015.promise.d.ts"
   ],
   "exclude": [
     "node_modules"
