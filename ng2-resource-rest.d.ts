@@ -1,4 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
+import './rxjs.operators';
 export * from './src/Interfaces';
 export * from './src/Resource';
 export * from './src/ResourceAction';

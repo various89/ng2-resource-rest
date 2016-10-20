@@ -2,6 +2,7 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HttpModule} from '@angular/http';
 import {ResourceProviders} from './src/ResourceProviders';
+import './rxjs.operators';
 
 export * from './src/Interfaces';
 export * from './src/Resource';
@@ -14,7 +15,10 @@ export * from './src/ResourceParams';
 export * from './src/ResourceProviders';
 
 @NgModule({
-  imports: [CommonModule, HttpModule]
+  imports: [
+    CommonModule,
+    HttpModule
+  ]
 })
 export class ResourceModule {
   static forRoot(): ModuleWithProviders {
