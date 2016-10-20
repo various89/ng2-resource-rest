@@ -7,6 +7,7 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/operator/distinctUntilChanged';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/publish';
 export * from './src/Interfaces';
 export * from './src/Resource';
 export * from './src/ResourceAction';
