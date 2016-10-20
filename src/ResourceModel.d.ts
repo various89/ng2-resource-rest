@@ -1,5 +1,5 @@
 import { Type } from '@angular/core/src/type';
-import { Observable } from '../ng2-resource-rest';
+import { Observable } from 'rxjs/Observable';
 import { ResourceModelParamsBase } from './Interfaces';
 import { Resource } from './Resource';
 export declare function ResourceModelParams(params?: ResourceModelParamsBase): (target: Type<ResourceModel>) => void;

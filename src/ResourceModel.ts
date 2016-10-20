@@ -1,9 +1,8 @@
 import {Type} from '@angular/core/src/type';
-import {Observable} from '../ng2-resource-rest';
+import {Observable} from 'rxjs/Observable';
 import {ResourceModelParamsBase} from './Interfaces';
 import {Resource} from './Resource';
 import {mapToModel} from './ResourceAction';
-
 
 
 export function ResourceModelParams(params?: ResourceModelParamsBase) {

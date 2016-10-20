@@ -6,7 +6,7 @@ import {Resource} from './Resource';
 import {ResourceModel} from './ResourceModel';
 import {ConnectableObservable} from 'rxjs/observable/ConnectableObservable';
 import {Subscriber, Subscription} from 'rxjs/Subscriber';
-import {Observable} from '../ng2-resource-rest';
+import {Observable} from 'rxjs/Observable';
 
 export function ResourceAction(methodOptions?: ResourceActionBase) {
 
