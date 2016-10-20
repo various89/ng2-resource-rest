@@ -5,8 +5,8 @@ import {ResourceActionBase, ResourceResult, ResourceResponseMap, ResourceRespons
 import {Resource} from './Resource';
 import {ResourceModel} from './ResourceModel';
 import {ConnectableObservable} from 'rxjs/observable/ConnectableObservable';
-import {Subscriber, Observable, Subscription} from 'rxjs/observable';
-
+import {Subscriber, Subscription} from 'rxjs/Subscriber';
+import {Observable} from '../ng2-resource-rest';
 
 export function ResourceAction(methodOptions?: ResourceActionBase) {
 
