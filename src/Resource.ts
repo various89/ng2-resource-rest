@@ -1,11 +1,13 @@
 import { Http, Request } from '@angular/http';
 import { Injector } from '@angular/core';
 import { Type } from '@angular/core/src/type';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 import { ResourceGlobalConfig } from './ResourceGlobalConfig';
 import { ResourceModel } from './ResourceModel';
 import { ResourceParamsBase } from './Interfaces';
 import { ResourceActionBase } from './Interfaces';
+
+import 'rxjs/add/operator/map';
 
 export class Resource {
 
@@ -154,11 +156,11 @@ export class Resource {
   }
 
 
-  private _getUrl(methodOptions?: ResourceActionBase): string|Promise<string> {
+  private _getUrl(methodOptions?: ResourceActionBase): string | Promise<string> {
     return null;
   }
 
-  private _getPath(methodOptions?: ResourceActionBase): string|Promise<string> {
+  private _getPath(methodOptions?: ResourceActionBase): string | Promise<string> {
     return null;
   }
 

@@ -1,5 +1,8 @@
 import { Headers, Request, RequestMethod, RequestOptions, Response, URLSearchParams } from '@angular/http';
-import { ConnectableObservable, Observable, Subscriber, Subscription } from 'rxjs/Rx';
+import { ConnectableObservable } from 'rxjs/observable/ConnectableObservable';
+import { Observable } from 'rxjs/Observable';
+import { Subscriber } from 'rxjs/Subscriber';
+import { Subscription } from 'rxjs/Subscription';
 import { ReflectiveInjector } from '@angular/core';
 import { Type } from '@angular/core/src/type';
 import {
@@ -111,10 +114,10 @@ export function ResourceAction(methodOptions?: ResourceActionBase) {
             callback = data;
             data = null;
           } else
-          if (typeof params === 'function') {
-            callback = params;
-            params = null;
-          }
+            if (typeof params === 'function') {
+              callback = params;
+              params = null;
+            }
 
           // if (typeof data === 'function') {
           //   if (!callback) {
@@ -127,7 +130,7 @@ export function ResourceAction(methodOptions?: ResourceActionBase) {
           //   } else {
           //     data = null;
           //   }
-					//
+          //
           // }
 
 

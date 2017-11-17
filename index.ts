@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { ResourceProviders } from './src/ResourceProviders';
 
-export * from './src/Resource';
+export { Resource } from './src/Resource';
 export * from './src/ResourceAction';
 export * from './src/ResourceCRUD';
 export * from './src/ResourceCRUDBase';

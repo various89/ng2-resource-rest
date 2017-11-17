@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 import { Request, RequestMethod } from '@angular/http';
 import { Type } from '@angular/core/src/type';
 import { ResourceModel } from './ResourceModel';

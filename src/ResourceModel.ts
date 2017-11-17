@@ -1,8 +1,8 @@
-import {Type} from '@angular/core/src/type';
-import {Observable} from 'rxjs/Rx';
-import {ResourceModelParamsBase} from './Interfaces';
-import {Resource} from './Resource';
-import {mapToModel} from './ResourceAction';
+import { Type } from '@angular/core/src/type';
+import { Observable } from 'rxjs/Observable';
+import { ResourceModelParamsBase } from './Interfaces';
+import { Resource } from './Resource';
+import { mapToModel } from './ResourceAction';
 
 
 
@@ -82,7 +82,7 @@ export class ResourceModel<R> {
       console.error(`Your Resource has no implemented ${method_name} method.`);
       return this;
     }
-    let data = (method_name === 'remove') ? {id: (<any>this)[this.$primaryKey]} : this.$getData();
+    let data = (method_name === 'remove') ? { id: (<any>this)[this.$primaryKey] } : this.$getData();
 
     let result = _method.bind(this.$resource)(data);
     this.$resolved = result.$resolved;
